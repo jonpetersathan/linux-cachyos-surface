@@ -8,18 +8,25 @@ The updated linux-surface patches used for this kernel can be found here: [jonpe
 
 ### Build from source
 
-To install the kernel and header files from source, run the following commands within CachyOS (or any Arch derivative):
+To build the kernel and header files from source, run the following commands within CachyOS (or any Arch derivative):
 
 ```bash
 sudo pacman -S base-devel
 git clone https://github.com/jonpetersathan/linux-cachyos-surface
-cd linux-cachyos-surface/VERSION
+cd linux-cachyos-surface/linux-cachyos-surface
 makepkg -si --skipinteg
+```
+
+Or alternatively using docker:
+
+```bash
+time docker run --name kernelbuild -v $PWD:/pkg pttrr/docker-makepkg-v3
+sudo pacman -U linux-cachyos-surface-*.pkg.tar.zst
 ```
 
 ### Install prebuilt packages
 
-You can also just install the prebuilt kernel by downloading the kernel and header files from [here](https://github.com/jonpetersathan/linux-cachyos-surface/releases) and run:
+You can also just install one of the prebuilt kernels by downloading the kernel and header files from [here](https://github.com/jonpetersathan/linux-cachyos-surface/releases) and run:
 
 ```bash
 sudo pacman -U linux-cachyos-surface-*.pkg.tar.zst
