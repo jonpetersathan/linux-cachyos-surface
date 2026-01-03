@@ -157,11 +157,11 @@ _is_ci_build() {
 }
 
 if _is_lto_kernel && [ "$_use_lto_suffix" = "yes"  ]; then
-    _pkgsuffix=cachyos-lto
-elif ! _is_lto_kernel && [ "$_use_gcc_suffix" = "yes" ]; then
-    _pkgsuffix=cachyos-gcc
+    _pkgsuffix=cachyos-surface-lto
+elif ! _is_lto_& [ "$_use_gcc_suffix" = "yes" ]; then
+    _pkgsuffix=cachyos-surface-gcc
 else
-    _pkgsuffix=cachyos
+    _pkgsuffix=cachyos-surface
 fi
 
 pkgbase="linux-$_pkgsuffix"
@@ -182,7 +182,7 @@ pkgrel=1
 _kernver="$pkgver-$pkgrel"
 _kernuname="${pkgver}-${_pkgsuffix}"
 arch=('x86_64')
-url="https://github.com/CachyOS/linux-cachyos"
+url="https://github.com/jonpetersathan/linux-cachyos-surface"
 license=('GPL-2.0-only')
 options=('!strip' '!debug' '!lto')
 makedepends=(

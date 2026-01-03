@@ -12,14 +12,14 @@ To install the kernel and header files from source, run the following commands w
 
 ```bash
 sudo pacman -S base-devel
-git clone https://github.com/jonpetersathan/linux-surface-cachyos
-cd linux-surface-cachyos/VERSION
+git clone https://github.com/jonpetersathan/linux-cachyos-surface
+cd linux-cachyos-surface/VERSION
 makepkg -si --skipinteg
 ```
 
 ### Install prebuilt packages
 
-You can also just install the prebuilt kernel by downloading the kernel and header files from [here](https://github.com/jonpetersathan/linux-surface-cachyos/releases) and run:
+You can also just install the prebuilt kernel by downloading the kernel and header files from [here](https://github.com/jonpetersathan/linux-cachyos-surface/releases) and run:
 
 ```bash
 sudo pacman -U linux-cachyos-*.pkg.tar.zst linux-cachyos-headers-*.pkg.tar.zst
