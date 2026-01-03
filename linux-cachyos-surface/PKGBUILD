@@ -79,7 +79,7 @@
 # - "native" (use compiler autodetection)
 # - "zen4" (Use znver4 compiler optimizations)
 # - "generic" (kernel's default - to share the package between machines with different CPU µarch as long as they are x86-64)
-: "${_processor_opt:=}"
+: "${_processor_opt:=GENERIC_V3}"
 
 # Clang LTO mode, only available with the "llvm" compiler - options are "none", "full" or "thin".
 # ATTENTION - one of three predefined values should be selected!
@@ -87,7 +87,7 @@
 # "thin: uses multiple threads, faster and uses less memory, may have a lower runtime performance than Full."
 # "thin-dist: Similar to thin, but uses a distributed model rather than in-process: https://discourse.llvm.org/t/rfc-distributed-thinlto-build-for-kernel/85934"
 # "none: disable LTO
-: "${_use_llvm_lto:=thin}"
+: "${_use_llvm_lto:=none}"
 
 # Use suffix -lto only when requested by the user
 # yes - enable -lto suffix
