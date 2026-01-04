@@ -26,6 +26,7 @@ pkgbase = linux-cachyos-surface
 	options = !lto
 	source = https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.3.tar.xz
 	source = config
+	source = https://raw.githubusercontent.com/jonpetersathan/linux-surface/refs/heads/master/configs/surface-6.18.config
 	source = https://raw.githubusercontent.com/cachyos/kernel-patches/master/6.18/all/0001-cachyos-base-all.patch
 	source = https://raw.githubusercontent.com/cachyos/kernel-patches/master/6.18/misc/dkms-clang.patch
 	source = https://raw.githubusercontent.com/linux-surface/linux-surface/refs/heads/master/patches/6.18/0001-secureboot.patch
