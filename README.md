@@ -4,6 +4,8 @@ This repository includes the files needed to build an optimized CachyOS kernel i
 
 The updated linux-surface patches used for this kernel can be found here: [jonpetersathan/linux-surface](https://github.com/jonpetersathan/linux-surface)
 
+**NOTE:** The configuration files and prebuilt kernels are optimized for X86_64_v3 instruction sets, this should be fine for most Surface devices, but might not work on very old (1st or 2nd gen) devices.
+
 ## Installation Instructions
 
 ### Build from source
