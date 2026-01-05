@@ -1,7 +1,7 @@
 pkgbase = linux-cachyos-surface-lts
 	pkgdesc = Linux BORE + Cachy Sauce Kernel by CachyOS with other patches and improvements - Long Term Service
 	pkgver = 6.12.63
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/jonpetersathan/linux-cachyos-surface
 	arch = x86_64
 	license = GPL-2.0-only

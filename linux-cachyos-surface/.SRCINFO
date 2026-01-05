@@ -1,7 +1,7 @@
 pkgbase = linux-cachyos-surface
 	pkgdesc = Linux EEVDF + LTO + AutoFDO + Propeller Cachy Sauce Kernel by CachyOS with other patches and improvements.
 	pkgver = 6.18.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/jonpetersathan/linux-cachyos-surface
 	arch = x86_64
 	license = GPL-2.0-only
@@ -66,8 +66,6 @@ pkgname = linux-cachyos-surface
 	provides = NTSYNC-MODULE
 	provides = VHBA-MODULE
 	provides = ADIOS-MODULE
-	provides = linux-cachyos-surface-lto=6.18.3-1
-	replaces = linux-cachyos-surface-lto
 
 pkgname = linux-cachyos-surface-headers
 	pkgdesc = Headers and scripts for building modules for the Linux EEVDF + LTO + AutoFDO + Propeller Cachy Sauce Kernel by CachyOS with other patches and improvements. kernel
@@ -76,5 +74,3 @@ pkgname = linux-cachyos-surface-headers
 	depends = clang
 	depends = llvm
 	depends = lld
-	provides = linux-cachyos-surface-lto-headers=6.18.3-1
-	replaces = linux-cachyos-surface-lto-headers
