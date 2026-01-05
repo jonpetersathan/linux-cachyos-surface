@@ -4,7 +4,7 @@ This repository includes the files needed to build an optimized CachyOS kernel i
 
 The updated linux-surface patches used for this kernel can be found here: [jonpetersathan/linux-surface](https://github.com/jonpetersathan/linux-surface)
 
-**NOTE:** The configuration files and prebuilt kernels are optimized for X86_64_v3 instruction sets, this should be fine for most Surface devices, but might not work on very old (1st or 2nd gen) devices.
+_**NOTE:** The configuration files and prebuilt kernels are optimized for X86_64_v3 instruction sets, this should be fine for most Surface devices, but might not work on very old (1st or 2nd gen) devices._
 
 ## Variants
 
@@ -36,7 +36,7 @@ docker run --name kernelbuild -v $PWD:/pkg cachyos/docker-makepkg-v3
 sudo pacman -U linux-cachyos-surface-*.pkg.tar.zst
 ```
 
-**NOTE:** Per default the linux-cachyos-surface kernel is configured in LTO mode `full`, this may take a bit longer to compile and requires more ram. It can be changed by updating the following line in the PKGBUILD:
+_**NOTE:** Per default the linux-cachyos-surface kernel is configured in LTO mode `full`, this may take a bit longer to compile and requires more ram. It can be changed by updating the following line in the PKGBUILD:_
 ```bash
 # Clang LTO mode, only available with the "llvm" compiler - options are "none", "full" or "thin".
 # ATTENTION - one of three predefined values should be selected!
