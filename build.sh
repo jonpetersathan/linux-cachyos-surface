@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -e
+
 # ## Enable ZFS
 # #find . -name "PKGBUILD" | xargs -I {} sed -i "s/_build_zfs:=no/_build_zfs:=yes/" {}
 # ## Enable Generic v3
